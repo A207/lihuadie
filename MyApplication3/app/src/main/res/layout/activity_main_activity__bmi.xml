@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tu87"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="B.M.I"
+        android:textSize="40dp"/>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:text="     体重指数计数器"
+            android:textSize="40dp"
+            android:id="@+id/table"
+            android:inputType="number"/>
+    </TableRow>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的身高(cm)"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/table"
+        android:layout_marginTop="30dp"
+
+        android:inputType="number"
+        android:id="@+id/height"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的体重(kg)"
+        android:textSize="25dp"
+        android:layout_below="@+id/table"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        android:inputType="number"
+        android:id="@+id/weight"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计算BMI"
+        android:layout_below="@+id/table"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关于BMI"
+        android:layout_below="@+id/table"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn2"
+        android:layout_gravity="center|bottom"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"/>
+
+</LinearLayout>
